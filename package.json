@@ -1,0 +1,60 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@apollo/react-hooks": "^3.1.5",
+    "@emotion/styled": "^10.0.27",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@tippyjs/react": "^4.0.2",
+    "Dante2": "^0.5.0-rc4",
+    "apollo-boost": "^0.4.9",
+    "apollo-link": "^1.2.14",
+    "apollo-upload-client": "^13.0.0",
+    "chroma-js": "^2.1.0",
+    "dante-unsafe": "^0.5.2",
+    "emotion-theming": "^10.0.27",
+    "globalize": "^1.5.0",
+    "graphql": "^15.1.0",
+    "js-cookie": "^2.2.1",
+    "lodash": "^4.17.15",
+    "react": "^16.13.1",
+    "react-big-calendar": "^0.26.0",
+    "react-datepicker": "^3.0.0",
+    "react-dom": "^16.13.1",
+    "react-dropzone": "^11.0.1",
+    "react-hook-form": "^5.7.2",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^3.4.1",
+    "react-select": "^3.1.0",
+    "react-trello-not-safe": "^2.7.9"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "aws s3 sync build/ s3://mor-projects --acl public-read"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "prettier": "2.0.5"
+  }
+}

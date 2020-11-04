@@ -1,0 +1,5 @@
+.todoElement {
+    width: fit-content;
+    padding: 5px;
+    border-bottom: 1px solid #e3e4e7;
+}

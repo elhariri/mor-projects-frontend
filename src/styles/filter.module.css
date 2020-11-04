@@ -1,0 +1,55 @@
+@import "./colors.css";
+
+.filter {
+    position: relative;
+    align-items: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--light-dark-font);
+    display: -webkit-inline-flex;
+}
+
+.activeFilter {
+    color: var(--dark-font);
+}
+
+.activeFilter::after {
+    content: "";
+    left: calc(50% - 12.5px);
+    top: calc(100% + 7px);
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 7px;
+    background-color: var(--dark-font);
+}
+
+.filterDelete {
+    visibility: hidden;
+    width: 15px;
+    height: 15px;
+    line-height: 12px;
+    font-weight: 600;
+    margin: auto 0 auto 5px;
+    border-radius: 5px;
+    background: rgba(255, 0, 0, 0.15);
+    color: red;
+}
+
+.filterDelete:hover {
+    background: rgba(255, 0, 0, 0.3);
+}
+
+.filter:hover .filterDelete {
+    visibility: visible;
+}
+
+.filterBy {
+    margin: auto;
+    margin-right: 0;
+}

@@ -1,0 +1,177 @@
+@import "../styles/colors.css";
+
+.taskContainer {
+    position: relative;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px; /* updated border-radius: 12px; */
+    margin: 5px auto; /* updated margin-top: 10px; */
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 300px;
+    box-shadow: 0 1px rgb(236, 238, 239); /* added */
+    /* to delete */
+    max-width: 380px;
+
+    /* Update */
+    margin: 10px auto;
+    box-shadow: rgba(2, 14, 60, 0.1) 0px 5px 10px,
+        inset 0 -5px 30px rgba(141, 141, 142, 0.03);
+    border: 1px solid #e8e8eb;
+    transition: box-shadow ease-in 200ms;
+    z-index: 1;
+}
+
+.taskContainer:hover {
+    z-index: 2;
+    box-shadow: rgba(2, 14, 60, 0.2) 0px 5px 20px,
+        inset 0 -5px 30px rgba(141, 141, 142, 0.03);
+}
+
+.taskImg {
+    padding-bottom: 50%;
+}
+
+.bigTaskImg {
+    border-radius: 15px;
+}
+
+.smallTaskImg {
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* added */
+.taskTitle {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 20px;
+    color: var(--dark-font);
+    white-space: break-spaces;
+}
+
+.taskButton {
+    width: 85px;
+    height: 30px;
+    line-height: 20px;
+    outline: none;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+    background-color: var(--main-color);
+}
+
+.newLaneSection {
+    display: flex;
+    background: var(--darker-background-grey);
+    line-height: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 12px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.addNewTask {
+    font-size: 10px;
+    color: #838c91;
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 320px;
+    text-align: left;
+    padding: 10px 13px;
+    cursor: pointer;
+}
+
+.addNewTask:hover {
+    color: #4d4d4d;
+    -webkit-text-decoration: underline;
+    text-decoration: underline;
+}
+
+.menuIcon {
+    z-index: 3;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin: 4px 0 auto 30px;
+    margin-right: 0;
+    cursor: pointer;
+    fill: var(--light-dark-font);
+    overflow: hidden;
+}
+
+.menuIcon:hover {
+    fill: var(--dark-font);
+}
+
+.expandedMenuIcon {
+    overflow: visible;
+}
+
+.menuOptionsContainer {
+    width: 110px;
+    right: 0px;
+    position: absolute;
+    top: -5px;
+    padding: 25px 5px 5px 5px;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 0 5px 30px rgba(128, 128, 128, 0.38);
+}
+
+.expandedMenuIcon .menuOptionsContainer {
+    background: white;
+    z-index: 4;
+}
+
+.menuOption {
+    padding: 5px;
+    text-align: left;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menuOption:hover {
+    color: white;
+    background-color: var(--main-color);
+}
+
+.newTaskFormContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+    background-color: white;
+    z-index: 5;
+}
+
+.tag {
+    padding: 5px 7px;
+    border-radius: 5px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 1.3rem;
+    margin: 5px 5px 0 0;
+}
+
+.checkElement {
+    line-height: 15px;
+    margin: 0 0 5px 0;
+}
+
+.checkIcon {
+    width: 15px;
+    height: 15px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-right: 5px;
+}

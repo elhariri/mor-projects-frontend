@@ -1,0 +1,51 @@
+/** @format */
+
+@import "./colors.css";
+
+.header {
+    width: 80px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    border-right: 1px solid rgba(9, 47, 72, 0.04);
+    box-shadow: rgba(128, 128, 128, 0.1) 5px 0px 30px;
+    z-index: 7;
+    /* background-color: var(--main-color); */
+}
+
+.navbarContainer {
+    margin: auto;
+    margin-top: 80px;
+}
+
+.navbarElement {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin: 15px 0;
+    font-size: 1.4rem;
+}
+
+.navbarElement:hover {
+    background-color: white;
+    box-shadow: inset 0 0 30px #175da526;
+    fill: var(--main-color);
+}
+
+.navbarTitle {
+    color: "white";
+    font-size: 1.4rem;
+}
+
+.navbarIcon {
+    fill: rgb(235, 236, 239);
+}
+
+.activeNavbarIcon {
+    fill: white;
+    background-color: var(--main-color);
+}
+
+.activeNavbarIcon:hover {
+    fill: white;
+    background-color: var(--main-color);
+}
